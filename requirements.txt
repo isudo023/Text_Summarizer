@@ -1,0 +1,9 @@
+
+diffusers>=0.25.0
+ctransformers>=0.2.24
+gradio
+streamlit>=1.29.0
+accelerate>=0.25.0
+pypdf
+peft>=0.6.0
+transformers>=4.36.0,<5.0.0
