@@ -2,8 +2,9 @@ import torch
 import gradio as gr
 from transformers import pipeline
 from pathlib import Path
+from transformers import pipeline
 
-text_summary = pipeline("text-generation", model="KRAFTON/Raon-1-mini-preview", trust_remote_code=True)
+pipe = pipeline("text-generation", model="MemTensor/MemT-1.0-Flash", trust_remote_code=True)
 
 
 def summary(input):
