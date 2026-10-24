@@ -4,7 +4,9 @@ from transformers import pipeline
 from pathlib import Path
 from transformers import pipeline
 
-pipe = pipeline("text-generation", model="MemTensor/MemT-1.0-Flash", trust_remote_code=True)
+from transformers import pipeline
+
+text_summary = pipeline("text-generation", model="RecursiveSI/flint")
 
 
 def summary(input):
