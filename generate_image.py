@@ -3,8 +3,6 @@ import gradio as gr
 from transformers import pipeline
 from pathlib import Path
 
-from transformers import pipeline
-
 text_summary = pipeline("text-generation", model="KRAFTON/Raon-1-mini-preview", trust_remote_code=True)
 
 
