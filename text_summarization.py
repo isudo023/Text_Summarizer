@@ -6,8 +6,7 @@ from transformers import pipeline
 
 from transformers import pipeline
 
-text_summary = pipeline("text-generation", model="RecursiveSI/flint")
-
+text_summary = pipeline("text-generation", model="sshleifer/t5-base-cnn")
 
 def summary(input):
     output = text_summary(input)
